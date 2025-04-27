@@ -1,11 +1,818 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Chalecos | Home </title>
+    <link href="views/cdn/shop/t/2/assets/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="views/cdn/shop/t/2/assets/assets.css" rel="stylesheet" type="text/css" media="all">
+    <link href="views/cdn/shop/t/2/assets/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="views/cdn/shop/t/2/assets/responsive.css" rel="stylesheet" type="text/css" media="all">
+    <link href="views/cdn/shop/t/2/assets/font-awesome.css" rel="stylesheet" type="text/css" media="all">
+    <link href="views/cdn/shop/t/2/assets/css" rel="stylesheet" type="text/css">
+    <link href="views/cdn/shop/t/2/assets/css" rel="stylesheet" type="text/css">
+    <script src="views/cdn/shop/t/2/assets/jquery.min.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/bootstrap.min.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/jquery.mobile.customized.min.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/shop.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/api.jquery.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/ajaxify-shop.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/hoverIntent.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/superfish.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/supersubs.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/sftouchscreen.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/jquery.fancybox-1.3.4.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/jquery.bxslider.min.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/jquery.nivoslider.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/tm-stick-up.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/jquery.formstyler.min.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/jquery.equalheights.js" type="text/javascript"></script>
+    <link href="views/cdn/shop/t/2/assets/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="views/cdn/shop/t/2/assets/wow.min.js" type="text/javascript"></script>
+    <script src="views/cdn/shop/t/2/assets/ba2bf07f9wd258a588pa9bc280fmc06997f5m.js" type="text/javascript"></script>
+
 </head>
-<body>     
-            <iframe src="http://tn-chalecos.byethost10.com/" width="100%" height="600px"></iframe>      
+<div class="hidden"><!-- SHOWCASE CUSTOM BLOCKS -->
+
+    <!-- MAIN CONTENT -->
+    <div id="main" role="main">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="index.php.html?action=inicio" class="homepage-link" title="Back to the frontpage">Home</a>
+                </li>
+                <li><span class="page-title">Your Shopping Cart</span></li>
+            </ul>
+            
+        </div>
+    </div>
+</div>
+
+<body id="tienda-chalecos" class="template-index">
+    <div id="wrapper">
+        <div id="wrapper2">
+            <!-- HEADER -->
+
+            <header id="header">
+                <div class="header_top">
+                    <div class="container">
+                        <!-- USER MENU -->
+                        <ul class="header_user">
+                            <li><a href="index.php-2.html?action=account/login" id="customer_login_link">Ingresar</a>
+                            </li>
+
+                            <li><a href="index.php-3.html?action=account/register"
+                                    id="customer_register_link">Registrarse</a></li>
+
+
+                            <li class="checkout"><a href="index.php-4.html?action=cart">Ver Carrito</a></li>
+                        </ul>
+                        <!-- HEADER CART -->
+                        <div class="header_cart">
+
+                            <a class="continer-icon">
+
+                                <i class="fa fa-shopping-cart" id="icon-close"></i>
+                                <span class="cart-total-items">
+                                    <span class="count" id="count-poducts">
+                                        0 </span>
+                                </span>
+
+                            </a>
+                            <link rel="stylesheet" href="cart.css" tipe="text/css">
+                            <div class="container-cart-products hidden-cart d-block">
+
+                                <div class="carrito">
+                                    <div class="row-products">
+                                        <div class="cart-products">
+                                            <p class="cart-empty">El carrito está vacío</p>
+                                        </div>                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="header_search">
+                            <form action="/search" method="get" class="search-form" role="search">
+                                <input id="search-field" name="q" type="text" placeholder=" " class="hint">
+                                <button id="search-submit" type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    @media (max-width:640px) {
+
+                        /* Mobile menu */
+                        #mobile_menu {
+                            width: 594px;
+                            transform: translatex(0px) translatey(0px);
+                            background-color: rgba(21, 19, 19, 0.61);
+                            color: #ececed;
+                        }
+
+                    }
+                </style>
+                <div class="header_center" style="position: relative; top: 0px;">
+                    <div class="container">
+                        <!-- LOGO -->
+                        <div id="logo">
+                            <a href="inicio.html">
+                                <b>Chalecos</b>
+                            </a>
+                        </div>
+                        <!-- NAVIGATION -->
+
+                        <div id="navigation ">
+                            <nav role="navigation">
+                                <ul class="sf-menu visible-md visible-lg clearfix sf-js-enabled sf-arrows">
+                                    <li class="active firstItem">
+                                        <a title="Home" href="inicio.html">Home</a>
+                                    </li>
+                                    <li class="">
+                                        <a title="Catalogo" href="all.html" class="sf-with-ul">Catalogo</a>
+                                        <ul class="dropdown" style="display: none; float: none; width: 12em;">
+                                            <li class="firstItem"
+                                                style="white-space: normal; float: none; width: 100%;">
+                                                <a href="men.html" style="float: none; width: auto;">Men</a>
+                                            </li>
+                                            <li style="white-space: normal; float: none; width: 100%;">
+                                                <a href="accesorios.html"
+                                                    style="float: none; width: auto;">Accesorios</a>
+                                            </li>
+                                            <li style="white-space: normal; float: none; width: 100%;">
+                                                <a href="women.html" style="float: none; width: auto;">Women</a>
+                                            </li>
+                                            <li class="lastItem" style="white-space: normal; float: none; width: 100%;">
+                                                <a href="documentation.html"
+                                                    style="float: none; width: auto;">Documentation</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                        <a title="Blog" href="blog.html">Blog</a>
+                                    </li>
+                                    <li class="">
+                                        <a title="About" href="about.html">About</a>
+                                    </li>
+                                    <li class="">
+                                        <a title="Documentation" href="documentation.html">Documentation</a>
+                                    </li>
+                                    <li class="lastItem">
+                                        <a title="Contact us" href="contact_us.html">Contact us</a>
+                                    </li>
+                                </ul>
+
+
+                            </nav>
+                            <div id="mobile_menu-styler" class="jq-selectbox jqselect visible-xs visible-sm "
+                                style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0.9;z-index: 1 !important;">
+                                <select name="main_navigation" id="mobile_menu" class="visible-xs visible-sm">
+
+
+                                    <option value="/">Home</option>
+
+
+
+
+                                    <option value="all">Catalogo</option>
+
+
+
+
+
+                                    <option value="men">- Men</option>
+
+
+
+                                    <option value="accesorios">- Accesorios</option>
+
+
+
+                                    <option value="women">Women</option>
+
+
+
+
+                                    <option value="blog">Blog</option>
+
+
+
+
+                                    <option value="about">About</option>
+
+
+
+
+                                    <option value="documentation">Documentation</option>
+
+
+
+
+                                    <option value="contact_us">Contacto</option>
+
+
+
+
+
+
+
+                                </select>
+                                <div class="jq-selectbox__select" style="position: relative;">
+
+                                    <div class="jq-selectbox__select-text" style="width: 0px;">Home</div>
+
+                                    <div class="jq-selectbox__trigger">
+
+                                        <div class="jq-selectbox__trigger-arrow"></div>
+
+                                        <i class="fa fa-caret-down"></i>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="jq-selectbox__dropdown"
+                                    style="position: absolute; left: 0px; top: 0px; display: none;">
+                                    <ul
+                                        style="position: relative; list-style: none; overflow: auto; overflow-x: h idden">
+                                        <li class="selected sel" style="display: block; white-space: nowrap;">Home
+                                        </li>
+                                        <li class="" style="display: block; white-space: nowrap;">Catalog</li>
+                                        <li class="" style="display: block; white-space: nowrap;">- Brands</li>
+                                        <li class="" style="display: block; white-space: nowrap;">- Men</li>
+                                        <li class="" style="display: block; white-space: nowrap;">- Styles</li>
+                                        <li class="" style="display: block; white-space: nowrap;">- Women</li>
+                                        <li class="" style="display: block; white-space: nowrap;">Blog</li>
+                                        <li class="" style="display: block; white-space: nowrap;">About Us</li>
+                                        <li class="" style="display: block; white-space: nowrap;">Documentation</li>
+                                        <li class="" style="display: block; white-space: nowrap;">Contact us</li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pseudoStickyBlock" style="position: relative; display: block; height: 0px;"></div>
+            </header> <!-- SHOWCASE CUSTOM BLOCKS -->
+            <div id="main" role="main">
+                <div class="container">
+                    <div class="row sidebar_right sidebar_off">
+
+
+                        <div class="row">
+                            <ul class="breadcrumb">
+                                <li class="firstItem">
+                                    <a href="inicio.html" class="homepage-link" title="Back to the frontpage">Home</a>
+                                </li>
+                                <li class="lastItem">
+                                    <span class="page-title">Home</span>
+                                </li>
+                            </ul>
+
+                            <div class="column_center">
+                                <div class="index-scope">
+                                    <h2 class="page_heading" id="Home">Featured Products</h2>
+                                    <div class="product-listing__index">
+                                        <div class="product_listing_main">
+                                            <div class="row">
+                                                <div class="wow col-sm-3 product product__1">
+                                                    <div class="container-items ">
+                                                        <div class="product_img">
+                                                            <a href="index.php-5.html?action=articulo&id=1">
+                                                                <img src="admin/views/images/articulos/articulo949.png"
+                                                                    alt="Viajero">
+                                                                <div class="sale">Sale</div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money new_price"
+                                                                    data-currency-usd="$45000.00">$45000.00</span>
+                                                                <span class="money compare-at-price"
+                                                                    data-currency-usd="$50000.00">$50000.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>Viajero</h4>
+                                                            </div>
+                                                            <div class="product_links">
+                                                                <form method="post" action="">
+                                                                    <input type="hidden" name="id" value="1">
+                                                                    <!-- START BUY -->
+                                                                    <input class="btn btn-cart" type="submit"
+                                                                        name="btnAction" value="add">
+                                                                    <!-- END BUY -->
+                                                                </form>
+                                                                <a class="btn"
+                                                                    href="index.php-5.html?action=articulo&id=1">Ver</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wow col-sm-3 product product__2">
+                                                    <div class="container-items">
+                                                        <div class="product_img">
+                                                            <a href="index.php-6.html?action=articulo&id=2">
+                                                                <img src="admin/views/images/articulos/articulo196.jpg"
+                                                                    alt="Casco Dama">
+                                                            </a>
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money new_price"
+                                                                    data-currency-usd="$15000.00">$15000.00</span>
+                                                                <span class="money compare-at-price"
+                                                                    data-currency-usd="$20000.00">$20000.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>Casco Dama</h4>
+                                                            </div>
+                                                            <div class="product_links">
+                                                                <form method="post" action="">
+                                                                    <input type="hidden" name="id" value="2">
+                                                                    <!-- START BUY -->
+                                                                    <input class="btn btn-cart" type="submit"
+                                                                        name="btnAction" value="add">
+                                                                    <!-- END BUY -->
+                                                                </form>
+                                                                <a class="btn"
+                                                                    href="index.php-6.html?action=articulo&id=2">Ver</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wow col-sm-3 product product__3">
+                                                    <div class="container-items">
+                                                        <div class="product_img">
+                                                            <a href="index.php-7.html?action=articulo&id=3">
+                                                                <img src="admin/views/images/articulos/articulo982.jpg"
+                                                                    alt="Arnes dama">
+                                                            </a>
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money new_price"
+                                                                    data-currency-usd="$15000.00">$15000.00</span>
+                                                                <span class="money compare-at-price"
+                                                                    data-currency-usd="$22000.00">$22000.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>Arnes dama</h4>
+                                                            </div>
+                                                            <div class="product_links">
+                                                                <form method="post" action="">
+                                                                    <input type="hidden" name="id" value="3">
+                                                                    <!-- START BUY -->
+                                                                    <input class="btn btn-cart" type="submit"
+                                                                        name="btnAction" value="add">
+                                                                    <!-- END BUY -->
+                                                                </form>
+                                                                <a class="btn"
+                                                                    href="index.php-7.html?action=articulo&id=3">Ver</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wow col-sm-3 product product__4">
+                                                    <div class="container-items">
+                                                        <div class="product_img">
+                                                            <a href="index.php-8.html?action=articulo&id=4">
+                                                                <img src="admin/views/images/articulos/articulo750.png"
+                                                                    alt="Forte">
+                                                                <div class="sale">Sale</div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money new_price"
+                                                                    data-currency-usd="$25000.00">$25000.00</span>
+                                                                <span class="money compare-at-price"
+                                                                    data-currency-usd="$28000.00">$28000.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>Forte</h4>
+                                                            </div>
+                                                            <div class="product_links">
+                                                                <form method="post" action="">
+                                                                    <input type="hidden" name="id" value="4">
+                                                                    <!-- START BUY -->
+                                                                    <input class="btn btn-cart" type="submit"
+                                                                        name="btnAction" value="add">
+                                                                    <!-- END BUY -->
+                                                                </form>
+                                                                <a class="btn"
+                                                                    href="index.php-8.html?action=articulo&id=4">Ver</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wow col-sm-3 product product__6">
+                                                    <div class="container-items">
+                                                        <div class="product_img">
+                                                            <a href="index.php-9.html?action=articulo&id=6">
+                                                                <img src="admin/views/images/articulos/articulo212.jpg"
+                                                                    alt="Deporte  dama">
+                                                            </a>
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money new_price"
+                                                                    data-currency-usd="$120000.00">$120000.00</span>
+                                                                <span class="money compare-at-price"
+                                                                    data-currency-usd="$200000.00">$200000.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>Deporte dama</h4>
+                                                            </div>
+                                                            <div class="product_links">
+                                                                <form method="post" action="">
+                                                                    <input type="hidden" name="id" value="6">
+                                                                    <!-- START BUY -->
+                                                                    <input class="btn btn-cart" type="submit"
+                                                                        name="btnAction" value="add">
+                                                                    <!-- END BUY -->
+                                                                </form>
+                                                                <a class="btn"
+                                                                    href="index.php-9.html?action=articulo&id=6">Ver</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wow col-sm-3 product product__7">
+                                                    <div class="container-items">
+                                                        <div class="product_img">
+                                                            <a href="index.php-10.html?action=articulo&id=7">
+                                                                <img src="admin/views/images/articulos/articulo791.jpg"
+                                                                    alt="guantes">
+                                                                <div class="sale">Sale</div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money new_price"
+                                                                    data-currency-usd="$20000.00">$20000.00</span>
+                                                                <span class="money compare-at-price"
+                                                                    data-currency-usd="$25000.00">$25000.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>guantes</h4>
+                                                            </div>
+                                                            <div class="product_links">
+                                                                <form method="post" action="">
+                                                                    <input type="hidden" name="id" value="7">
+                                                                    <!-- START BUY -->
+                                                                    <input class="btn btn-cart" type="submit"
+                                                                        name="btnAction" value="add">
+                                                                    <!-- END BUY -->
+                                                                </form>
+                                                                <a class="btn"
+                                                                    href="index.php-10.html?action=articulo&id=7">Ver</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wow col-sm-3 product product__8">
+                                                    <div class="container-items">
+                                                        <div class="product_img">
+                                                            <a href="index.php-11.html?action=articulo&id=8">
+                                                                <img src="admin/views/images/articulos/articulo714.jpg"
+                                                                    alt="Rodillera">
+                                                            </a>
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money new_price"
+                                                                    data-currency-usd="$25000.00">$25000.00</span>
+                                                                <span class="money compare-at-price"
+                                                                    data-currency-usd="$30000.00">$30000.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>Rodillera</h4>
+                                                            </div>
+                                                            <div class="product_links">
+                                                                <form method="post" action="">
+                                                                    <input type="hidden" name="id" value="8">
+                                                                    <!-- START BUY -->
+                                                                    <input class="btn btn-cart" type="submit"
+                                                                        name="btnAction" value="add">
+                                                                    <!-- END BUY -->
+                                                                </form>
+                                                                <a class="btn"
+                                                                    href="index.php-11.html?action=articulo&id=8">Ver</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wow col-sm-3 product product__9">
+                                                    <div class="container-items">
+                                                        <div class="product_img">
+                                                            <a href="index.php-12.html?action=articulo&id=9">
+                                                                <img src="admin/views/images/articulos/articulo707.jpg"
+                                                                    alt="pechera">
+                                                                <div class="sale">Sale</div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money new_price"
+                                                                    data-currency-usd="$20000.00">$20000.00</span>
+                                                                <span class="money compare-at-price"
+                                                                    data-currency-usd="$25000.00">$25000.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>pechera</h4>
+                                                            </div>
+                                                            <div class="product_links">
+                                                                <form method="post" action="">
+                                                                    <input type="hidden" name="id" value="9">
+                                                                    <!-- START BUY -->
+                                                                    <input class="btn btn-cart" type="submit"
+                                                                        name="btnAction" value="add">
+                                                                    <!-- END BUY -->
+                                                                </form>
+                                                                <a class="btn"
+                                                                    href="index.php-12.html?action=articulo&id=9">Ver</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wow col-sm-3 product product__10">
+                                                    <div class="container-items">
+                                                        <div class="product_img">
+                                                            <a href="index.php-13.html?action=articulo&id=10">
+                                                                <img src="admin/views/images/articulos/arnes01.jpg"
+                                                                    alt="mara">
+                                                                <div class="sale">Sale</div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money new_price"
+                                                                    data-currency-usd="$25000.00">$25000.00</span>
+                                                                <span class="money compare-at-price"
+                                                                    data-currency-usd="$30000.00">$30000.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>mara</h4>
+                                                            </div>
+                                                            <div class="product_links">
+                                                                <form method="post" action="">
+                                                                    <input type="hidden" name="id" value="10">
+                                                                    <!-- START BUY -->
+                                                                    <input class="btn btn-cart" type="submit"
+                                                                        name="btnAction" value="add">
+                                                                    <!-- END BUY -->
+                                                                </form>
+                                                                <a class="btn"
+                                                                    href="index.php-13.html?action=articulo&id=10">Ver</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wow col-sm-3 product product__11">
+                                                    <div class="container-items">
+                                                        <div class="product_img">
+                                                            <a href="index.php-14.html?action=articulo&id=11">
+                                                                <img src="admin/views/images/articulos/articulo988.png"
+                                                                    alt="Chaleco bolso">
+                                                            </a>
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money new_price"
+                                                                    data-currency-usd="$22000.00">$22000.00</span>
+                                                                <span class="money compare-at-price"
+                                                                    data-currency-usd="$30000.00">$30000.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>Chaleco bolso</h4>
+                                                            </div>
+                                                            <div class="product_links">
+                                                                <form method="post" action="">
+                                                                    <input type="hidden" name="id" value="11">
+                                                                    <!-- START BUY -->
+                                                                    <input class="btn btn-cart" type="submit"
+                                                                        name="btnAction" value="add">
+                                                                    <!-- END BUY -->
+                                                                </form>
+                                                                <a class="btn"
+                                                                    href="index.php-14.html?action=articulo&id=11">Ver</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wow custom_showcase custom_showcase__1 maxheight">
+                        <a href="index.php-15.html?action=men">
+                            <img src="views/cdn/shop/t/2/assets/custom_showcase1_img.jpg?v=92735537122294695001408466919"
+                                alt="">
+                            <div class="inside">
+                                <h3>new <br> Arrivals</h3>
+                                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="wow custom_showcase custom_showcase__2 maxheight">
+                        <a href="index.php-16.html?action=women">
+                            <img src="views/cdn/shop/t/2/assets/custom_showcase2_img.jpg?v=135474890425677594861408466920"
+                                alt="">
+                            <div class="inside">
+                                <h3>Designer Sunglasses</h3>
+                                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="wow custom_showcase custom_showcase__3 maxheight">
+                        <a href="index.php-17.html?action=all">
+
+                            <div class="inside">
+                                <h3>SAVE</h3>
+                                <h2>50%</h2>
+                                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div> <!-- MAIN CONTENT -->
+
+                <footer>
+                    <div class="footer_top">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-3 col-xs-6 footer_block footer_block__1 wow">
+                                    <h3>Iformación</h3>
+                                    <ul>
+                                        <li class="active"><a href="index.php.html?action=inicio" title="">Home</a></li>
+
+                                        <li><a href="index.php-18.html?action=search" title="">Search</a></li>
+                                        <li><a href="index.php-19.html?action=pages/about-us" title="">About Us</a></li>
+                                        <li><a href="index.php-20.html?action=collections/all" title="">Products</a>
+                                        </li>
+
+                                        <li><a href="index.php-21.html?action=blogs/blog" title="">Blog</a></li>
+
+                                        <li><a href="index.php-22.html?action=pages/contact_us" title="">Contact us</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="col-sm-3 col-xs-6 footer_block footer_block__2 wow">
+                                    <h3>Catalogo</h3>
+                                    <ul>
+
+                                        <li><a href="index.php-23.html?action=collections/frontpage" title="">Brands</a>
+                                        </li>
+
+                                        <li><a href="index.php-24.html?action=collections/men" title="">Men</a></li>
+
+                                        <li><a href="index.php-25.html?action=collections/styles" title="">Styles</a>
+                                        </li>
+
+                                        <li><a href="index.php-26.html?action=collections/women" title="">Women</a></li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="col-sm-3 col-xs-6 footer_block footer_block__3 wow">
+                                    <h3>My account</h3>
+                                    <ul>
+
+                                        <li><a href="index.php-27.html?action=account/login-1" title="">My account</a>
+                                        </li>
+
+                                        <li><a href="index.php-28.html?action=account/login-2" title="">My addresses</a>
+                                        </li>
+
+                                        <li><a href="index.php-4.html?action=cart" title="">My cart</a></li>
+
+                                    </ul>
+                                </div>
+
+
+                                <div class="col-sm-3 col-xs-6 footer_block footer_block__4 wow">
+                                    <h3>Newsletter</h3>
+
+                                    <div class="footer_newsletter">
+
+                                        <form method="post" action="/contact#contact_form" id="contact_form"
+                                            accept-charset="UTF-8" class="contact-form"><input type="hidden"
+                                                name="form_type" value="customer"><input type="hidden" name="utf8"
+                                                value="✓">
+                                            <div class="form_wrap">
+                                                <input type="hidden" id="contact_tags" name="contact[tags]"
+                                                    value="prospect,newsletter">
+                                                <input type="hidden" id="newsletter-first-name"
+                                                    name="contact[first_name]" value="Subscriber">
+                                                <input type="hidden" id="newsletter-last-name" name="contact[last_name]"
+                                                    value="Newsletter">
+                                                <input type="email" id="email-input" placeholder="Enter your E-mail"
+                                                    name="contact[email]">
+
+                                                <button id="email-submit">GO!</button>
+                                                <div class="clearfix"></div>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                    <ul class="socials">
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <div class="container">
+                            <p role="contentinfo">&copy; 2024 Sunglasses. All Rights Reserved. Design by
+                                <a href="http://tn-chalecos.byethost10.com/">TemplateMonster.com</a>
+                                <a target="_blank" rel="nofollow" href="http://tn-chalecos.byethost10.com/">Powered
+                                    by Shopify
+                                </a>
+                            </p><!-- Design by templatemonster.com -->
+                        </div>
+                    </div>
+
+                </footer> <!-- FOOTER -->
+            </div>
+
+            <!-- custom selects -->
+            <script src="script.js"></script>
+            <script src="views/assets/ajaxify-shop.js"></script>
+            <script src="views/assets/api.jquery.js"></script>
+            <script src="views/assets/bootstrap.min.js"></script>
+            <scruot src="views/assets/hoverIntent.js"></scruot>
+            <scruot src="views/assets/jquery-migrate-1.2.1.min.js"></scruot>
+            <scruot src="views/assets/jquery.bxslider.min.js"></scruot>
+            <scruot src="views/assets/jquery.currencies.min.js"></scruot>
+            <scruot src="views/assets/jquery.easing.1.3.js"></scruot>
+            <scruot src="views/assets/jquery.equalheights.js"></scruot>
+            <scruot src="views/assets/jquery.fancybox-1.3.4.js"></scruot>
+            <scruot src="views/assets/jquery.formstyler.min.js"></scruot>
+            <scruot src="views/assets/jquery.mobile.customized.min.js"></scruot>
+            <scruot src="views/assets/jquery.nivoslider.js"></scruot>
+            <scruot src="views/assets/sftouchscreen.js"></scruot>
+            <scruot src="views/assets/shop.js"></scruot>
+            <scruot src="views/assets/superfish.js"></scruot>
+            <scruot src="views/assets/supersubs.js"></scruot>
+            <scruot src="views/assets/tm-stick-up.js"></scruot>
+            <scruot src="views/assets/wow.min.js"></scruot>
+
+            <div id="fancybox-tmp"></div>
+            <div id="fancybox-loading">
+                <div></div>
+            </div>
+            <div id="fancybox-overlay"></div>
+            <div id="fancybox-wrap">
+                <div id="fancybox-outer">
+                    <div class="fancybox-bg" id="fancybox-bg-n"></div>
+                    <div class="fancybox-bg" id="fancybox-bg-ne"></div>
+                    <div class="fancybox-bg" id="fancybox-bg-e"></div>
+                    <div class="fancybox-bg" id="fancybox-bg-se"></div>
+                    <div class="fancybox-bg" id="fancybox-bg-s"></div>
+                    <div class="fancybox-bg" id="fancybox-bg-sw"></div>
+                    <div class="fancybox-bg" id="fancybox-bg-w"></div>
+                    <div class="fancybox-bg" id="fancybox-bg-nw"></div>
+                    <div id="fancybox-content"></div>
+                    <a id="fancybox-close"></a>
+                    <div id="fancybox-title"></div>
+                    <a href="javascript:;" id="fancybox-left">
+                        <span class="fancy-ico" id="fancybox-left-ico"></span>
+                    </a>
+                    <a href="javascript:;" id="fancybox-right">
+                        <span class="fancy-ico" id="fancybox-right-ico"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+
 </html>
