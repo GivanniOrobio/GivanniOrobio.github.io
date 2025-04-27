@@ -30,34 +30,34 @@
                                 <li><a href="index.php?action=cart" title="">My cart</a></li>
                         </ul>
                 </div>
-                <div class="col-sm-3 col-xs-6 footer_block footer_block__4 wow">
-                        <h3>Newsletter</h3>
-                <div class="footer_newsletter">
-                    <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form">
-                         <input type="hidden" name="form_type" value="customer">
-                         <input type="hidden" name="utf8" value="?">
-                            <div class="form_wrap">
-                                <input type="hidden" id="contact_tags" name="contact[tags]" value="prospect,newsletter">
-                                <input type="hidden" id="newsletter-first-name" name="contact[first_name]" value="Subscriber">
-                                <input type="hidden" id="newsletter-last-name" name="contact[last_name]" value="Newsletter">
-                                <input type="email" id="email-input" placeholder="Enter your E-mail" name="contact[email]">
-                                <button id="email-submit">GO!</button>
-                                <div class="clearfix"></div>
-                            </div>
-                    </form>
-                </div>
-               <ul class="socials">
-                   <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                   <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                   <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                   </ul>
+                                        <div class="col-sm-3 col-xs-6 footer_block footer_block__4 wow">
+                                                <h3>Newsletter</h3>
+                                                        <div class="footer_newsletter">
+                                                            <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form">
+                                                                 <input type="hidden" name="form_type" value="customer">
+                                                                 <input type="hidden" name="utf8" value="">
+                                                                    <div class="form_wrap">
+                                                                        <input type="hidden" id="contact_tags" name="contact[tags]" value="prospect,newsletter">
+                                                                        <input type="hidden" id="newsletter-first-name" name="contact[first_name]" value="Subscriber">
+                                                                        <input type="hidden" id="newsletter-last-name" name="contact[last_name]" value="Newsletter">
+                                                                        <input type="email" id="email-input" placeholder="Enter your E-mail" name="contact[email]">
+                                                                        <button id="email-submit">GO!</button>
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                             </form>
+                                           </div>
+                                       <ul class="socials">
+                                           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                           <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                        </ul>
+                                </div>
+                        </div>
                 </div>
         </div>
-</div>
-</div>
-<div class="copyright">
-    	<div class="container">
-                <p role="contentinfo">&copy; 2024 Sunglasses. All Rights Reserved. Design by <a href="//templatemonster.com">TemplateMonster.com</a>. <a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore">Powered by Shopify</a>.</p><!-- Design by templatemonster.com -->
-    </div>
-</div>
+        <div class="copyright">
+    	        <div class="container">
+                        <p role="contentinfo">&copy; 2024 Sunglasses. All Rights Reserved. Design by <a href="//templatemonster.com">TemplateMonster.com</a>. <a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore">Powered by Shopify</a>.</p><!-- Design by templatemonster.com -->
+                </div>
+        </div>
 </footer>
