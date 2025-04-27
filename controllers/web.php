@@ -2,7 +2,7 @@
 
 class Enlaces{
 
-	public function enlacesController(){
+	static public function enlacesController(){
 
 		if(isset($_GET["action"])){
 
