@@ -42,7 +42,8 @@
                                                                         <input type="hidden" id="newsletter-last-name" name="contact[last_name]" value="Newsletter">
                                                                         <input type="email" id="email-input" placeholder="Enter your E-mail" name="contact[email]">
                                                                         <button id="email-submit">GO!</button>
-                                                                        <div class="clearfix"></div>                                                                   
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
                                                              </form>
                                                         </div>
                                                 </div>
