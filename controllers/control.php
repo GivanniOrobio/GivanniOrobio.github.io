@@ -1,7 +1,7 @@
 <?php 
 class Control{
     static public function template(){
-        include("views/template.php");
+        include __DIR__."/../views/template.php");
     }
 }
 
